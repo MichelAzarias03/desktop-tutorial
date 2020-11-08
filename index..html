@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="./js/jquery-3.5.1.slim.js"></script>
+    
+    <title>Mon debut en java</title>
+
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="calculatrice">
+         <div id="header">
+                <input type="text" id="number" value="0" autocomplete="off" disabled  width="100%" height="100%"/>
+                </div>
+       <div class="ecran"></div>
+        <div class="buttons"></div>
+        <div class="function">
+            
+        </div>
+        <div id="body">
+        <div class="pause">
+            <span class="button ON" data-value="ON">ON</span>
+            <span class="button"data-value="OF">OF</span>
+            <span class="button"data-value="shift">shift</span>
+         <span class="button"data-value="alpha">alpha</span>
+         <span class="button"data-value="Mode">Mode</span>
+        </div>
+      
+            <div class="nombre">
+                <span class="button"data-value="7" onClick="value(7);">7</span>
+   				<span class="button"data-value="8" onClick="value(8);">8</span>
+   				<span class="button"data-value="9" onClick="value(9);">9</span>
+   				<span class="button"data-value="del"onClick="value(del);">del</span>
+   				<span class="button" data-value="inV"onClick="value(inV);">inV</span>
+   				<span class="button" data-value="rad"onClick="value(rad);">rad</span>
+   				<span class="button" data-value="%"  >%</span>
+               </div>
+               <div class="boda">
+                <span class="button" data-value="4"  onClick="value(4);">4</span>
+                <span class="button" data-value="5"  onClick="value(5);">5</span>
+                <span class="button" data-value="6"  onClick="value(6);">6</span>
+                <span class="button" data-value="/" >/</span>
+                <span class="button" data-value="sin">sin</span>
+                <span class="button" data-value="cos">Cos</span>
+                <span class="button" data-value="tan">tan</span>
+            </div>
+            <div class="pav-num">
+                <div class="number">
+                    <span class="button" data-value="1"  onClick="value(1);">1</span>
+                    <span class="button" data-value="2" onClick="value(2);">2</span>
+                    <span class="button" data-value="3" onClick="value(3);">3</span>
+                    <span class="button" data-value="*">*</span>
+                    <span class="button" data-value="-">-</span>
+                    <span class="button" data-value="in">in</span>
+                    <span class="button" data-value="log">log</span>
+                  
+             </div>
+                <div class="sign">
+                        <span class="button" data-value=",">,</span>
+                        <span class="button" data-value="0">0</span>
+                        <span class="button" data-value="=">=</span>
+                        <span class="button" data-value="+">+</span>
+                        <span class="button" data-value="!">!</span>
+                        <span class="button" data-value="(">(</span>
+                        <span class="button" data-value=")">)</span>
+                 </div>
+                </div>
+            </div>
+            </div>
+        </div>
+</div>
+<script src="./js/jquery-3.5.1.slim.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+   $(document).ready(function() {
+       var calc =new Calculator();
+       calc.run();
+      });
+   </script>
+    
+</body>
+
+</html>
